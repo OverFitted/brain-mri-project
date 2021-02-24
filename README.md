@@ -1,4 +1,4 @@
-# brain-mri-project
+# Brain Tumor detection project
 Ссылки на данные:
 https://www.kaggle.com/mateuszbuda/lgg-mri-segmentation
 https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection/data
