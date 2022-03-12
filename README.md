@@ -1,4 +1,4 @@
-# Brain tumor detection project
+# Brain tumor classification and segmentation using AI
 Ссылки на данные:
 
 https://www.kaggle.com/mateuszbuda/lgg-mri-segmentation
