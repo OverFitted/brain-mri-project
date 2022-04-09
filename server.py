@@ -31,7 +31,7 @@ def upload_file():
             for filetype in ALLOWED_IMG_EXTENSIONS:
                 files.extend(glob(os.path.join(TEMP_FOLDER, f"*.{filetype}")))
 
-            files.sort(key=lambda x: int(os.path.split(x)[-1].split(".")[0]))
+            files.sort(key=lambda x: int(os.path.basename(x).split(".")[0]))
 
             results = []
             for files_batch in batch_splitter(files, BATCH_SIZE):
