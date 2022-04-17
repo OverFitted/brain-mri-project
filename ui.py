@@ -440,7 +440,10 @@ class Ui_MainWindow(object):
                                             }
 
                                             QComboBox::down-arrow {
-                                                image: url(/usr/share/icons/crystalsvg/16x16/actions/1downarrow.png);
+                                                image: url(resources/icons/downarrow.png);
+                                                width: 14px;
+                                                height: 14px;
+                                                margin-right: 15px;
                                                 filter: invert(1);
                                             }
                                             """)
