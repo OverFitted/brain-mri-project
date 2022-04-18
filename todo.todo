@@ -1,0 +1,10 @@
+TODO:
+- [ ] Status bar upload status
+- [ ] Segmentation toggle
+- [ ] Patients DF
+-   [ ] New patient dialog on file open
+-   [ ] Choose between created
+-   [ ] Edit patient
+- [ ] History toolbar
+-   [ ] Cache folder
+-   [ ] Segmentation save

@@ -1,9 +1,8 @@
 import os
 import sys
 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget
+from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.QtCore import QThread
-from PyQt5 import uic
 from ui import Ui_MainWindow
 from ui_functions import *
 

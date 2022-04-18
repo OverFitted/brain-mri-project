@@ -11,9 +11,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1000, 750)
-        MainWindow.setMinimumSize(QtCore.QSize(300, 300))
+        MainWindow.setObjectName("Brain tumor recognizer")
+        MainWindow.resize(1300, 750)
+        MainWindow.setMinimumSize(QtCore.QSize(450, 450))
         MainWindow.setMaximumSize(QtCore.QSize(3000, 3200))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(49, 79, 79))
@@ -476,14 +476,17 @@ class Ui_MainWindow(object):
         self.frame_top_right.setObjectName("frame_top_right")
         self.horizontalLayout.addWidget(self.frame_top_right)
         self.verticalLayout_2.addWidget(self.frame_top)
+
         self.frame_center = QtWidgets.QFrame(self.frame)
         self.frame_center.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_center.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_center.setObjectName("frame_center")
+
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_center)
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_2.setSpacing(0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+
         self.frame_center_left = QtWidgets.QFrame(self.frame_center)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -496,6 +499,7 @@ class Ui_MainWindow(object):
         self.frame_center_left.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_center_left.setObjectName("frame_center_left")
         self.horizontalLayout_2.addWidget(self.frame_center_left)
+
         self.frame_image = QtWidgets.QFrame(self.frame_center)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -507,9 +511,11 @@ class Ui_MainWindow(object):
         self.frame_image.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_image.setObjectName("frame_image")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame_image)
+
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
+
         self.scrollArea = QtWidgets.QScrollArea(self.frame_image)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -520,6 +526,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea.setObjectName("scrollArea")
+
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 975, 487))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
@@ -529,9 +536,11 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents.setSizePolicy(sizePolicy)
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName("verticalLayout_6")
+
         self.label_for_image = QtWidgets.QLabel(self.scrollAreaWidgetContents)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Ignored, QtWidgets.QSizePolicy.Ignored)
         sizePolicy.setHorizontalStretch(0)
@@ -543,6 +552,7 @@ class Ui_MainWindow(object):
         # self.label_for_image.setScaledContents(True)
         self.label_for_image.setObjectName("label_for_image")
         self.verticalLayout_6.addWidget(self.label_for_image)
+
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayout_4.addWidget(self.scrollArea)
         self.horizontalSlider = QtWidgets.QSlider(self.frame_image)
@@ -565,6 +575,7 @@ class Ui_MainWindow(object):
                                             """)
         self.verticalLayout_4.addWidget(self.horizontalSlider)
         self.horizontalLayout_2.addWidget(self.frame_image)
+
         self.frame_center_right = QtWidgets.QFrame(self.frame_center)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -577,6 +588,7 @@ class Ui_MainWindow(object):
         self.frame_center_right.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_center_right.setObjectName("frame_center_right")
         self.horizontalLayout_2.addWidget(self.frame_center_right)
+
         self.verticalLayout_2.addWidget(self.frame_center)
         self.frame_6 = QtWidgets.QFrame(self.frame)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
@@ -590,6 +602,7 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
         self.verticalLayout_2.addWidget(self.frame_6)
+
         self.frame_bottom = QtWidgets.QFrame(self.frame)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -601,9 +614,11 @@ class Ui_MainWindow(object):
         self.frame_bottom.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_bottom.setObjectName("frame_bottom")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.frame_bottom)
+
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+
         self.frame_4 = QtWidgets.QFrame(self.frame_bottom)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -616,6 +631,7 @@ class Ui_MainWindow(object):
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
         self.horizontalLayout_3.addWidget(self.frame_4)
+
         self.frame_bottom_left = QtWidgets.QFrame(self.frame_bottom)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -627,9 +643,11 @@ class Ui_MainWindow(object):
         self.frame_bottom_left.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_bottom_left.setObjectName("frame_bottom_left")
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.frame_bottom_left)
+
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+
         self.bottom_lineEdit = QtWidgets.QLineEdit(self.frame_bottom_left)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
@@ -653,6 +671,7 @@ class Ui_MainWindow(object):
         self.bottom_lineEdit.setReadOnly(True)
         self.bottom_lineEdit.setObjectName("bottom_lineEdit")
         self.horizontalLayout_6.addWidget(self.bottom_lineEdit)
+
         self.frame_5 = QtWidgets.QFrame(self.frame_bottom_left)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -663,17 +682,21 @@ class Ui_MainWindow(object):
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
+
         self.horizontalLayout_6.addWidget(self.frame_5)
         self.horizontalLayout_3.addWidget(self.frame_bottom_left)
+
         self.frame_button_go = QtWidgets.QFrame(self.frame_bottom)
         self.frame_button_go.setMaximumSize(QtCore.QSize(100, 16777215))
         self.frame_button_go.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_button_go.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_button_go.setObjectName("frame_button_go")
+
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_button_go)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
+
         self.pushButton_go = QtWidgets.QPushButton(self.frame_button_go)
         self.pushButton_go.setMinimumSize(QtCore.QSize(95, 40))
         self.pushButton_go.setMaximumSize(QtCore.QSize(95, 40))
@@ -697,6 +720,7 @@ class Ui_MainWindow(object):
         self.pushButton_go.setObjectName("pushButton_go")
         self.verticalLayout_3.addWidget(self.pushButton_go)
         self.horizontalLayout_3.addWidget(self.frame_button_go, 0, QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+
         self.frame_bottom_right = QtWidgets.QFrame(self.frame_bottom)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -708,9 +732,30 @@ class Ui_MainWindow(object):
         self.frame_bottom_right.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_bottom_right.setObjectName("frame_bottom_right")
         self.horizontalLayout_3.addWidget(self.frame_bottom_right)
+
         self.verticalLayout_2.addWidget(self.frame_bottom)
         self.verticalLayout.addWidget(self.frame)
         MainWindow.setCentralWidget(self.centralwidget)
+
+        self.history_toolbar = QtWidgets.QToolBar("History", self.frame)
+        self.history_toolbar.setMovable(False)
+        self.history_toolbar.setMinimumWidth(250)
+        self.history_toolbar.setStyleSheet("""
+                                           QToolBar {
+                                               border: 0;
+                                           }
+                                           """)
+        MainWindow.addToolBar(QtCore.Qt.RightToolBarArea, self.history_toolbar)
+
+        self.utils_toolbar = QtWidgets.QToolBar("Utils", self.frame)
+        self.utils_toolbar.setMovable(False)
+        self.utils_toolbar.setStyleSheet("""
+                                           QToolBar {
+                                               border: 0;
+                                           }
+                                           """)
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.utils_toolbar)
+
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setStyleSheet("background-color: rgb(10, 10, 10)")
         self.statusbar.setObjectName("statusbar")
