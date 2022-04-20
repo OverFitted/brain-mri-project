@@ -24,4 +24,4 @@ pip install -r requirements.txt
 
 ## TODO and FIXIT
 
-In every branch you can find todo.todo and fixit.todo files. More about them @matthewpalmer/.todo
+In every branch you can find todo.todo and fixit.todo files. More about them [@matthewpalmer/.todo](https://github.com/matthewpalmer/.todo)
